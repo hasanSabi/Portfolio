@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabihul Hasan Portfolio</title>
+  <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'SF Pro','Inter',Helvetica, sans-serif;
+}
+
+
+.body-container {
+  padding-top: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000; 
+  z-index: 1000;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-image {
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px;
+  border: 1px solid #ffffffa3; 
+}
+
+
+.resume-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 10px; 
+  border: 1px solid #ffffffa3; 
+}
+
+.content {
+  width: 33%;
+}
+
+.profile {
+  padding-top: 590px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.profile-picture {
+  margin-right: 10px;
+ 
+}
+
+.pfp {
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px;
+  border: 1px solid #ffffffa3;
+}
+
+.project-logo {
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px;
+  display: block;
+  border: 1px solid #ffffffa3;
+}
+
+.profile-details a {
+    color: #ffffffa3;
+    font-size: 14px; 
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.project-details a {
+    color:#fff;
+    margin-bottom: 7px;
+    margin-top: 14px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+}
+
+.website-link a {
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.about-section,
+.education-section,
+.projects-section {
+  margin-bottom: 40px;
+}
+
+
+.link-section {
+  margin-bottom: 115px;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h1 {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+h4 {
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+.profile-details p {
+    color: #ffffffa3;
+    font-size: 14px;
+}
+
+
+.project-details p {
+    color: #ffffffa3;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.degree p { 
+    color: #ffffffa3;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.about-section p {
+    color: #ffffffa3;
+    font-size: 14px;
+    margin-bottom: 7px;
+    line-height: 1.5;
+}
+
+.duration p {
+    color: #ffffffa3;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.project-duration p {
+    color: #ffffffa3;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.website-name p {
+    color: #ffffffa3;
+    font-size: 14px;
+}
+
+
+.degree-list,
+.project-list{
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.link-list {
+  display: flex;
+}
+
+
+.duration,
+.project-duration,
+.website-name {
+  width: 25%;
+}
+
+.my-details {
+    margin-left: 20px;
+}
+
+.degree,
+.project-details,
+.website-link {
+  width: 75%;
+}
+
+
+
+.website-link,
+.website-name  {
+  margin-bottom: 8px;
+}
+
+.link-arrow::after { 
+   content: "\2192";
+   display: inline-block;
+   transform: rotate(315deg);
+   padding: 4px; 
+   font-weight: bold;
+ }
+
+/* Responsive styling */
+@media only screen and (max-width: 768px) {
+  .body-container {
+    padding: 20px;
+  }
+  
+  .content {
+    width: 90%;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+    <div class="header-container">
+      <header class="header-content">
+        <img src="a5.jpeg" alt="Sabihul" class="logo-image">
+        <button role="button" class="resume-btn">RESUME</button>
+      </header>
+    </div>
+<div class="body-container">
+    <div class="content">
+      <div class="profile">
+        <div class="profile-picture">
+          <img src="a5.jpeg" alt="sabihul" class="pfp">
+        </div>
+        <div class="profile-details">
+          <h1 class="my-name">Sabihul Hasan</h1>
+          <p class="my-details">Computer Science Student</p>
+          <a href="#">sabihulhasan.org</a>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h4 class="about-head">About</h4>
+        <p>Hi! I'm Sabihul Hasan, a Computer Science student with a keen interest in Data Science. Throughout my academic journey, I've delved deep into the world of algorithms, programming languages, and data analysis techniques.</p>
+      </div>
+
+      
+      <div class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project-duration">
+            <p>2024</p>
+          </div>
+          <div class="project-details">
+            <img src="a6.jpeg" alt="academiccenter logo" class="project-logo">
+            <a href="#" class="link-arrow">College Management System</a>
+            <p>The CMS automates administrative tasks, tracks attendance, manages results, and enhances communication among stakeholders.</p>
+            <p>Django • MySql • JavaScript • Bootstrap</p>
+          </div>
+        </div>
+        <div class="project-list">
+          <div class="project-duration">
+            <p>2024</p>
+          </div>
+          <div class="project-details">
+            <img src="a4.jpeg" alt="Portfolio logo" class="project-logo">
+            <a href="#"  class="link-arrow">My Portfolio</a>
+            <p>This website showcases my work, providing information about my projects, skills, and experiences in a simple format.</p>
+            <p>Html • MySql • JavaScript • CSS • Django</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-section">
+        <h2>Education</h2>
+        <div class="degree-list">
+          <div class="duration">
+            <p>2021 - 2024</p>
+          </div>
+          <div class="degree">
+            <h3 class="degree-heading">BCA</h3>
+            <p>Integral University, Lucknow</p>
+            <p>CGPA: 9.9</p>
+          </div>
+        </div>
+        <div class="degree-list">
+          <div class="duration">
+            <p>2017 - 2019</p>
+          </div>
+          <div class="degree">
+            <h3 class="degree-heading">XII</h3>
+            <p>Montfort Inter College, Mahanagar, Lucknow</p>
+            <p>Percentage: 88%</p>
+          </div>
+        </div>
+        <div class="degree-list">
+          <div class="duration">
+            <p>2015 - 2017</p>
+          </div>
+          <div class="degree">
+            <h3 class="degree-heading">X</h3>
+            <p>Janta Inter College, Gonda</p>
+            <p>Percentage: 85%</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="link-section">
+        <h2>Links</h2>
+        <div class="link-list">
+          <div class="website-name">
+            <p>Github</p>
+          </div>
+          <div class="website-link">
+            <a href="https://github.com/hasanSabi"  class="link-arrow">@hasanSabi</a>
+          </div>
+        </div>
+        <div class="link-list">
+          <div class="website-name">
+            <p>LinkedIn</p>
+          </div>
+          <div class="website-link">
+            <a href="#" class="link-arrow">@sabihulhasan</a>
+          </div>
+        </div>
+        <div class="link-list">
+          <div class="website-name">
+            <p>Twitter</p>
+          </div>
+          <div class="website-link">
+            <a href="https://twitter.com/heliumode" class="link-arrow">@heliumode</a>
+          </div>
+        </div>
+        <div class="link-list">
+          <div class="website-name">
+            <p>Email</p>
+          </div>
+          <div class="website-link">
+            <a href="mailto:sabihulgorra@gmail.com" class="link-arrow">sabihulgorra@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var resumeButton = document.querySelector(".resume-btn");
+        resumeButton.addEventListener("click", function() {
+            var resumeFilePath = "resume.pdf";
+            var link = document.createElement("a");
+            link.href = resumeFilePath;
+            link.download = "resume.pdf"; 
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    });
+    </script>
+
+</body>
+</html>
